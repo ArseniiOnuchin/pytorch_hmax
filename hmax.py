@@ -76,9 +76,18 @@ def gabor_filter(size, wavelength, orientation):
     filt : ndarray, shape (size, size)
         The filter weights.
     """
+
+
+    #Wavelength of the sinusoidal component
     lambda_ = size * 2. / wavelength
+    
+    #The sigma/standard deviation of the Gaussian envelope
     sigma = lambda_ * 0.8
+
+    #The spatial aspect ratio and specifies the ellipticity of the support of Gabor function.
     gamma = 0.3  # spatial aspect ratio: 0.23 < gamma < 0.92
+
+    #The orientation of the normal to the parallel stripes of Gabor function.
     theta = np.deg2rad(orientation + 90)
 
     # Generate Gabor filter
