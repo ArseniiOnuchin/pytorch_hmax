@@ -317,22 +317,22 @@ class HMAX(nn.Module):
 
         # S1 layers, consisting of units with increasing size
         self.s1_units = [
-            S1(size=7, wavelength=4), #3.5
-            S1(size=9, wavelength=3.95), #4.6
-            S1(size=11, wavelength=3.9), #5.6
-            S1(size=13, wavelength=3.85), #6.8
-            S1(size=15, wavelength=3.8), #7.9
-            S1(size=17, wavelength=3.75), #9.1
-            S1(size=19, wavelength=3.7), #10.3
-            S1(size=21, wavelength=3.65), #11.5
-            S1(size=23, wavelength=3.6), #12.7
-            S1(size=25, wavelength=3.55), #14.1
-            S1(size=27, wavelength=3.5), #15.4
-            S1(size=29, wavelength=3.45), #16.8
-            S1(size=31, wavelength=3.4), #18.2
-            S1(size=33, wavelength=3.35), #19.7
-            S1(size=35, wavelength=3.3), #21.2
-            S1(size=37, wavelength=3.25), #22.8
+            S1(size=7, wavelength=4),
+            S1(size=9, wavelength=3.95),
+            S1(size=11, wavelength=3.9),
+            S1(size=13, wavelength=3.85),
+            S1(size=15, wavelength=3.8),
+            S1(size=17, wavelength=3.75),
+            S1(size=19, wavelength=3.7),
+            S1(size=21, wavelength=3.65),
+            S1(size=23, wavelength=3.6),
+            S1(size=25, wavelength=3.55),
+            S1(size=27, wavelength=3.5),
+            S1(size=29, wavelength=3.45),
+            S1(size=31, wavelength=3.4),
+            S1(size=33, wavelength=3.35),
+            S1(size=35, wavelength=3.3),
+            S1(size=37, wavelength=3.25),
         ]
 
         # Explicitly add the S1 units as submodules of the model
